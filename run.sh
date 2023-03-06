@@ -1,4 +1,4 @@
 #!/bin/bash
 
-#gunicorn experiment.wsgi
-python manage.py runserver $DJANGO_HOST:$DJANGO_PORT
+#python manage.py runserver $DJANGO_HOST:$DJANGO_PORT
+gunicorn --bind $DJANGO_HOST:$DJANGO_PORT experiment.wsgi:application
