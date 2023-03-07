@@ -27,7 +27,7 @@ SECRET_KEY = env_vars.SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env_vars.DEBUG
 
-ALLOWED_HOSTS = [env_vars.HOST]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "0.0.0.0"]
 
 
 # Application definition

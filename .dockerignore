@@ -7,3 +7,4 @@ Dockerfile
 .gitignore
 .python-version
 LICENSE
+*.log
