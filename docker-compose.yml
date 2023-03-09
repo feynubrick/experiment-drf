@@ -7,7 +7,7 @@ services:
     volumes:
       - app-data:/app
     networks:
-      - nginx_network
+      - backend
 
   nginx:
     image: nginx:1.23.3
@@ -19,10 +19,10 @@ services:
     depends_on:
       - django-app
     networks:
-      - nginx_network
+      - backend
 
 networks:
-  nginx_network:
+  backend:
     driver: bridge
 
 volumes:
